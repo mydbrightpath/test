@@ -7,8 +7,9 @@ import cv2 as cv
 import numpy as np
 from matplotlib import pyplot as plt
 
+
+
 img = cv.imread('sample_threshold\\2.jpg',0)
-# 1. 滤波去噪（中值滤波），先把图像中的椒盐噪点抹平
 img = cv.medianBlur(img,5)
 # 2. 全局阈值（作为对比组）
 ret,th1 = cv.threshold(img,127,255,cv.THRESH_BINARY)
