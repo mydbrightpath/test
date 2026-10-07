@@ -16,7 +16,6 @@ ret,th1 = cv.threshold(img,127,255,cv.THRESH_BINARY)
 # 3. 自适应均值阈值
 th2 = cv.adaptiveThreshold(img,255,cv.ADAPTIVE_THRESH_MEAN_C,\
             cv.THRESH_BINARY,11,2)
-# 4. 自适应高斯阈值
 th3 = cv.adaptiveThreshold(img,255,cv.ADAPTIVE_THRESH_GAUSSIAN_C,\
             cv.THRESH_BINARY,11,2)
 
